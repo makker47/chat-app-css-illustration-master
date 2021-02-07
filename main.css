@@ -1,0 +1,482 @@
+:root {
+
+/*### Primary*/
+
+/*#### Text*/
+
+/*(sub-heading at the top of the app UI)*/
+--Pale-Violet: hsl(276, 100%, 81%);
+
+/*(chat on the left)*/
+--Moderate-Violet: hsl(276, 55%, 52%);
+
+/*(chat on the right)*/
+--Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+
+/*(placeholder text)*/
+--Grayish-Blue: hsl(206, 6%, 79%);
+
+/*(main heading)*/
+--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+
+/*(paragraph)*/
+--Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+/*#### Gradients*/
+
+/*These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:*/
+
+--Light-Magenta: hsl(293, 100%, 63%);
+--Light-Violet: hsl(264, 100%, 61%);
+
+/*### Secondary*/
+
+--White: hsl(0, 0%, 100%);
+
+/*(app background)*/
+--Light-Grayish-Violet: hsl(270, 20%, 96%);
+
+/*(submit button background)*/
+--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+
+/*(radio button outline)*/
+--Very-Light-Magenta: hsl(289, 100%, 72%);
+
+/*font-weight*/
+
+--font-light: 400;
+--font-medium: 500;
+--font-bold: 700;
+
+}
+
+
+* {
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+body {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--Grayish-Violet);
+  font-size: 1rem;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100%;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* phone meniu three dots */
+
+.three-dots {
+  position: relative;
+  height: 0.9375rem;
+  width: 0.9375rem;
+  margin-left: auto;
+  
+}
+
+.three-dots::after {
+  content: '...';
+  position: absolute;
+  color: var(--White);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  font-size: 1.3rem;
+  margin-left: 6px;
+}
+
+/*------------------*/
+
+/*phone top */
+
+.container-phone {
+  margin-top: 1.25rem;
+  height: 36.25rem;
+  width: 17.5rem;
+  background-color: var(--White);
+  border-radius: 30px;
+  padding: 10px; 
+  box-shadow:
+  0 17px 48px rgba(0, 0, 0, 0.3)
+;
+  
+}
+
+.container-inside {
+  height: 35rem;
+  width: 16.25rem;
+  background: var(--Light-Grayish-Violet);
+  border-radius: 30px;
+  overflow: hidden;
+  
+} 
+
+.backbutton {
+	border: solid var(--White);
+  border-width: 0px 0px 3px 3px;
+  padding: 4px;
+  transform: rotate(45deg)
+	
+}
+
+.avatar {
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+  margin: 0 10px;
+  
+}
+
+.top-layout {
+  display: flex;
+  align-items: center;
+}
+
+.top-phone {
+  background: linear-gradient( to right, var(--Light-Violet), var(--Light-Magenta));
+  height: 3.75rem;
+  border-radius: 5px;
+  padding: 15px 20px 20px 15px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.top-phone h3{
+  color: var(--White);
+  font-size: 0.875rem;
+  font-weight: var(--font-medium);
+}
+
+.top-phone p {
+  color: var(--White);
+  font-size: 0.75rem;
+  font-weight: var(--font-light);
+}
+
+.speaker {
+  height: 1.25rem;
+  width: 9.375rem;
+  position: absolute;
+  background-color: var(--White);
+  left: 50%;
+  top: 50%;
+  transform: translate( -50%,-200%);
+  border-radius: 0 0 15px 15px;
+}
+
+/*------------------*/
+
+.screen {
+  font-size: 0.625rem;
+}
+
+.customer-smsone div{ 
+  
+  height: 2.5rem;
+  width: 60%;
+  background: var(--Grayish-Blue);
+  border-radius: 15px 15px 15px 5px;
+  margin: 10px 5px;
+  padding: 10px;
+  color: var(--Moderate-Violet);
+}
+
+.dog {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.dogone {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.pictures{
+ margin-top: 20px;
+ display: flex;
+}
+
+
+
+.seller-smsone {
+  height: 2.6rem;
+  width: 65%;
+  background: var(--White);
+  margin-left: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px 15px 5px 15px;
+  box-shadow:
+  0 17px 48px rgba(0, 0, 0, 0.3)
+;
+margin-right: 5px;
+}
+
+
+  
+ .seller-smstwo {
+  height: 1.25rem;
+  width: 45%;
+  background: var(--White);
+  margin-left: auto;
+  margin-top: 10px;
+  border-radius: 15px 15px 5px 15px;
+  box-shadow:
+  0 17px 48px rgba(0, 0, 0, 0.3)
+;
+  padding: 5px;
+  margin-right: 5px;
+  
+ }
+  
+
+
+ .customer-smstwo {
+   height: 3.25rem;
+   width: 65%;
+   background: var(--Grayish-Blue);
+   border-radius: 15px 15px 15px 5px;
+   padding: 10px;
+   color: var(--Moderate-Violet);
+   font-weight: var(--font-light);
+   margin: 20px 0px 10px 5px;
+ }
+
+.price{
+  
+  color: var(--White);
+  background: linear-gradient( to right, var(--Light-Magenta), var(--Light-Violet));
+  width: 80%;
+  padding: 5px;
+  height: 2.8125rem;
+  border-radius: 15px 15px 15px 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  
+  
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.priceone {
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: var(--font-bold);
+}
+
+.pricetwo {
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: var(--font-bold);
+}
+
+.text-area {
+ display: flex;
+ justify-content: center;
+ margin-top: 1.25rem;
+}
+
+
+.text-massage {
+ height: 40px;
+ background: var(--White);
+ width: 240px;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ padding-left: 10px;
+ color: var(--Grayish-Blue);
+ font-size: 0.75rem;
+}
+
+.button {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background: var(--Very-Dark-Desaturated-Violet);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.button::after {
+ content: '';
+ position: absolute;
+ border: solid var(--White);
+  border-width: 3px 3px 0px 0px;
+  padding: 4px;
+  transform: rotate(45deg);
+  top: 32%; 
+  left: 27%;
+  border-radius: 2px;
+}
+
+/*bottom paragraph */
+
+
+.simple-booking{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.simple-booking h1{
+  font-size: 2.625rem;
+  font-weight: var(--font-medium);
+  margin: 40px 0px 20px 0px;
+  color: var(--Very-Dark-Desaturated-Violet);
+}
+
+.paragraph {
+  text-align: center;
+  line-height: 2.0;
+  color: var(--Dark-Grayish-Violet);
+  margin-bottom: 50px;
+  width: 320px;
+}
+
+
+/*background */
+
+
+
+.left-background {
+  background: linear-gradient( to bottom, var(--Light-Magenta), var(--Light-Violet));
+  height: 500px;
+  width: 350px;
+  border-radius: 0 0 300px 300px;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  z-index: -1;
+  
+}
+  
+.right-background {
+  background: var(--Light-Grayish-Violet);
+  height: 520px;
+  width: 190px;
+  border-radius: 200px 0 0 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+ 
+  
+  
+}
+
+
+/*---------------*/
+/*footer*/
+
+.attribution { 
+  display: flex;
+  justify-content: center;
+  font-size: 12px; 
+  text-align: center;
+  margin-top: auto;
+  
+   
+}
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    
+
+
+@media screen and (min-width: 900px) {
+  .container {
+    min-height: 100vh;
+    flex-direction: row;
+    margin-bottom: 100px;
+    
+  }
+  .container-phone {
+    margin-right: 100px;
+  }
+  .paragraph{
+    text-align: left;
+    width: 450px;
+  }
+
+  .simple-booking {
+    align-items: unset;
+  }
+
+  .left-background {
+    background: linear-gradient( to bottom, var(--Light-Magenta), var(--Light-Violet));
+    height: 700px;
+    width: 470px;
+    border-radius: 0 0 300px 300px;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    z-index: -1;
+  }
+    
+  .right-background {
+    background: var(--Light-Grayish-Violet);
+    height: 800px;
+    width: 470px;
+    border-radius: 300px 300px 0 0;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    z-index: -1;
+    
+    
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+
